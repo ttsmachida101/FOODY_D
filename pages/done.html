@@ -1,9 +1,233 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FOODY- Direct</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FOODTOPIA</title>
+<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+<link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../js/myScript.js"></script>
 </head>
 <body>
+    <div id="logo"><a href="../index.html"><img src="../img/logo.png" align="center" height="70px"></a></div>
+<div class="topnav" id="myTopnav">
+  <a href="../index.html">Home</a>
+  <a href="menu.html">Restaurant</a>
+  <a href="selection.html">Order</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <ul class="nav navbar-nav navbar-right">
+      <li><a onclick="document.getElementById('id02').style.display='block'"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a onclick="document.getElementById('id01').style.display='block'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+</div>
+<div class="middlecont">
+<div class="outerContainer">
+   <div class="menus paymen">
+       <center><h2>Thank you. Your order is on its Way!</h2></center>
+        <hr>
+       <center><h4>Your Order detail has been sent to your email.</h4></center>
+       <hr>
+        <center><a href="../index.html" class="btn btn-primary btn-lg"><span>Back to Homepage</span></a></center>
+      </div>
+       </div>
+   </div>
+   
+   </div>
+   <div class="summary">
+    <div class="status">
+            <div class="row bs-wizard" style="border-bottom:0;">
+                <div class="col-xs-3 bs-wizard-step complete">
+                    <div class="text-center bs-wizard-stepnum"><a href="#">Start</a></div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                </div>
+                
+                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+                    <div class="text-center bs-wizard-stepnum"><a href="#">Selection</a></div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                </div>
+                
+                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+                    <div class="text-center bs-wizard-stepnum"><a href="#">Payment</a></div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                </div>
+                
+                <div class="col-xs-3 bs-wizard-step active"><!-- active -->
+                    <div class="text-center bs-wizard-stepnum"><a href="#">Done</a></div>
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                </div>
+            </div>
+        </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">Summary</div>
+
+        <div class="panel-body">
+          <div id="check1">
+
+            <div class="info">
+              Classic Calamari
+              <small class="quantity">
+                Quantity:
+                <span id="quantity1-2">
+                  1
+                </span>
+              </small>
+            </div>
+            <div class="price">
+              $ 20.75
+            </div>
+
+          </div>
+
+          <div id="check2">
+            <br>
+            <div class="info">
+              Classic Shrimp Scampi Fritta
+              <small class="quantity">
+                Quantity:
+                <span id="quantity2-2">
+                  1
+                </span>
+              </small>
+            </div>
+            <div class="price">
+              $ 10.75
+            </div>
+
+          </div>
+
+          <div id="check3">
+            <br>
+            <div class="info">
+              Stuffed Mushrooms
+              <small class="quantity">
+                Quantity:
+                <span id="quantity3-2">
+                  1
+                </span>
+              </small>
+            </div>
+            <div class="price">
+              $ 9.99
+            </div>
+
+          </div>
+
+
+          <div id="check4">
+            <br>
+            <div class="info">
+              Five Italian Cheese Fonduta
+              <small class="quantity">
+                Quantity:
+                <span id="quantity4-2">
+                  1
+                </span>
+              </small>
+            </div>
+            <div class="price">
+              $ 7.99
+            </div>
+
+          </div>
+
+        </div>
+        <div class="panel-footer">
+          <span>Subtotal:</span>
+          <div class="pull-right">$
+            <span id="total">49.48</script></span>
+          </div><br>
+          <span>GST(5%):</span>
+          <div class="pull-right">$
+            <span id="total">2.47</script></span>
+          </div><br>
+          <span>PST(8%):</span>
+          <div class="pull-right">$
+            <span id="total">3.96</script></span>
+          </div><br>
+
+          <div style="font-weight: bold; font-size: 20px">
+            <span>Total:</span>
+            <div class="pull-right">$
+              <span id="total">55.91</script></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div class="sumlist">
+           
+      </div>
+   </div>
+</div>
+
+
+<div class="login">
+    <!-- The Modal -->
+    <div id="id01" class="modalLR">
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+
+        <div class="containerMe">
+          
+           <span onclick="document.getElementById('id01').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+            <h2>FOODYDIRECT</h2>
+          <input type="text" placeholder="Email" name="uname" required>
+          <input type="password" placeholder="Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+</div>
+
+<div class="register">
+   <div id="id02" class="modalLR">
+  <form class="modal-content animate reg" action="/action_page.php">
+    <div class="containerMe">
+     <span onclick="document.getElementById('id02').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+            <h2>REGISTER</h2>
+      <label><b>Email</b></label>
+      <input type="text" placeholder="example@email.com" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <label><b>First Name</b></label>
+      <input type="text" placeholder="John" name="email" required>
+
+     <label><b>Last Name</b></label>
+      <input type="text" placeholder="Smith" name="email" required>
+
+     <label><b>Address</b></label>
+      <input type="text" placeholder="ex) 1010 Main st Winnipeg Manitoba R3L 0A9" name="email" required>
+      
+      <label><b>Date of Birth</b></label>
+      <input type="text" placeholder="ex) 1989 05 12" name="email" required>
+
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+
+  
 </body>
 </html>

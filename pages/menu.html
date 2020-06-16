@@ -10,16 +10,17 @@
 <script src="../js/jquery-3.1.1.min.js"></script>
 <script src="../libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 <script src="../js/myScript.js"></script>
-<script src="../js/summary.js"></script>
+
+
 <link rel="stylesheet" type="text/css" href="../slick/slick.css">
 <script src="../slick/slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-    <div id="logo"><a href="../index.html"><img src="../img/logo.png" align="center" height="70px"></a></div>
+<div id="logo"><a href="../index.html"><img src="../img/logo.png" align="center" height="70px"></a></div>
 <div class="topnav" id="myTopnav">
   <a href="../index.html">Home</a>
-  <a href="menu.html">Restaurant</a>
-  <a href="selection.html" style="background-color: #ddd; color: black;">Order</a>
+  <a href="menu.html" style="background-color: #ddd; color: black;">Restaurant</a>
+  <a href="selection.html">Order</a>
   <a href="contact.html">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   <ul class="nav navbar-nav navbar-right">
@@ -29,7 +30,7 @@
 </div>
 <div class="middlecont">
 <div class="outerContainer">
-   <div class="menus">
+   <div class="menus0">
        <div class="sliderr">
            <section class="regular slider">
                <div><img id="pizzahut" src="../img/pizzahut.png" align="center" height="70px"></div>
@@ -60,7 +61,6 @@
                             Cheese Stick (8pc)</a>
                             
                           </h4>
-                          <button type="button" class="btn btn-primary btn-md rightF" onclick="changeQuantity(+1,1)">ADD</button>
                           <h5 class="price">$4.99</h5>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse in">
@@ -88,10 +88,7 @@
     <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
     <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
     <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset>
-                           
-                           
-                            </div>
+</fieldset><script>document.getElementById("star4half").checked = true;</script></div>
                             </div>
                         </div>
                       </div>
@@ -101,7 +98,6 @@
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                             Garlic Bread (6pc)</a>
                           </h4>
-                          <button type="button" class="btn btn-primary btn-md rightF" onclick="changeQuantity(+1,2)">ADD</button>
                           <h5 class="price">$5.99</h5>
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">
@@ -127,7 +123,8 @@
     <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
     <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
     <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset></div>
+</fieldset><script>document.getElementById("star4half").checked = true;</script>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -137,7 +134,6 @@
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                             Chicken Wings</a>
                           </h4>
-                          <button type="button" class="btn btn-primary btn-md rightF" onclick="changeQuantity(+1,3)">ADD</button>
                           <h5 class="price">$9.99</h5>
                         </div>
                         <div id="collapse3" class="panel-collapse collapse">
@@ -163,9 +159,7 @@
     <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
     <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
     <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset><script>document.getElementById("star4half").checked = true;</script>
-                           
-                           </div>
+</fieldset><script>document.getElementById("star4half").checked = true;</script></div>
                             </div>
                         </div>
                       </div>
@@ -316,117 +310,10 @@
    </div>
    
    </div>
-   <div class="summary">
-    <div class="status">
-            <div class="row bs-wizard" style="border-bottom:0;">
-                <div class="col-xs-3 bs-wizard-step complete">
-                    <div class="text-center bs-wizard-stepnum"><a href="../index.html">Start</a></div>
-                  <div class="progress"><div class="progress-bar"></div></div>
-                  <a href="../index.html" class="bs-wizard-dot"></a>
-                </div>
-                
-                <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
-                    <div class="text-center bs-wizard-stepnum"><a href="#">Selection</a></div>
-                  <div class="progress"><div class="progress-bar"></div></div>
-                  <a href="#" class="bs-wizard-dot"></a>
-                </div>
-                
-                <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
-                  <div class="text-center bs-wizard-stepnum">Payment</div>
-                  <div class="progress"><div class="progress-bar"></div></div>
-                  <a href="#" class="bs-wizard-dot"></a>
-                </div>
-                
-                <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
-                  <div class="text-center bs-wizard-stepnum">Done</div>
-                  <div class="progress"><div class="progress-bar"></div></div>
-                  <a href="#" class="bs-wizard-dot"></a>
-                </div>
-            </div>
-        </div>
-     <div class="panel panel-info">
-        <div class="panel-heading">Checkout</div>
-
-        <div class="panel-body">
-          <div id="check1">
-
-            <div class="info">
-             <div class="add-minus-button">
-                <button type="button" class="btn btn-primary pull-left btn-sq-xs btn-info"
-                onclick="changeQuantity(+1,1)">+</button>
-                <span id="quantity1-1" class="pull-left digit1">0
-                  <script> displayQuantity(1);</script>
-                </span>
-                <button type="button" class="btn btn-primary pull-left btn-sq-xs btn-info"
-                onclick="changeQuantity(-1,1)">-</button>
-              </div>
-              Cheese Stick (8pc)
-                <div class="price">
-                  $ 4.99
-                </div>
-            </div>
-            
-
-          </div>
-
-          <div id="check2">
-            <br>
-            <div class="info">
-             <div class="add-minus-button">
-                <button type="button" class="btn btn-primary pull-left btn-sq-xs btn-info"
-                onclick="changeQuantity(+1,2)">+</button>
-                <span id="quantity2-1" class="pull-left digit1">0
-                  <script> displayQuantity(2);</script>
-                </span>
-                <button type="button" class="btn btn-primary pull-left btn-sq-xs btn-info"
-                onclick="changeQuantity(-1,2)">-</button>
-              </div>
-              Garlic Bread (6pc)
-              <div class="price">
-              $ 5.99
-            </div>
-            </div>
-            
-
-          </div>
-
-          <div id="check3">
-            <br>
-            <div class="info">
-             <div class="add-minus-button">
-                <button type="button" class="btn btn-primary pull-left btn-sq-xs btn-info"
-                onclick="changeQuantity(+1,3)">+</button>
-                <span id="quantity3-1" class="pull-left digit1">0
-                  <script> displayQuantity(3);</script>
-                </span>
-                <button type="button" class="btn btn-primary pull-left btn-sq-xs btn-info"
-                onclick="changeQuantity(-1,3)">-</button>
-              </div>
-                 Chicken Wings
-                <div class="price">
-                  $ 9.99
-                </div>
-            
-            </div>
-
-          </div>
-
-        </div>
-        <div class="panel-footer">
-          <span>Subtotal:</span>
-          <div class="pull-right">$
-            <span id="total">0.00<script>displayTotal()</script></span>
-          </div>
-        </div>
-      </div>
-
-      <center><a href="payment.html" class="btn btn-primary btn-lg">Continue</a></center>
-    </div>
-      <div class="sumlist">
-           
-      </div>
+   
    </div>
 </div>
+
 
 
 <div class="login">
@@ -487,9 +374,7 @@
   </form>
 </div>
 </div>
-
-
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function(){
        $(".regular").slick({
         dots: false,
