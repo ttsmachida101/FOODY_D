@@ -1,0 +1,766 @@
+
+
+body {
+    background-color: #333;
+    background-image: url("../img/bgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: right 0px top 100px ;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  padding-right: 10px;
+}
+
+.topnav a {
+  width: auto;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 5%;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#logo {
+    padding: 0;
+    width: 100%;
+    height: 80%;
+    background-color: #888;
+    opacity: 0.8;
+}
+#logo img {
+    margin-left: 5%;
+}
+
+
+.button {
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  padding: 30px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#orderButtons h2 {
+    margin: 10px;
+    font-size: 40px;
+}
+#orderButtons {
+    border-radius: 10px;
+    width: 435px;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    display: inline-block;
+    float: right;
+    background-color: #aaa;
+    opacity: 0.9;
+    border: 5px;
+}
+#welcome {
+    display: inline-block;
+    margin: 5%;
+}
+
+.botLogo {
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 20px;
+    padding-left: 5%;
+    background-color: rgba(230,230,230,0.5);
+    width: 95%;
+    overflow:auto;
+}
+.botLogo div {
+    display: inline-block;
+    width: auto;
+    height: 100px;
+    margin-right: 100px;
+    
+}
+.botlogo img {
+    height: 100px;
+}
+
+/* Full-width input fields */
+.login input[type=text],.register input[type=text],.login input[type=password],.register input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#id01 button, #id02 button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.containerMe {
+    padding: 16px;
+    border-radius: 8px;
+}
+.containerMe h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: firebrick;
+}
+.containerMe input{
+    font-size: 20px;
+}
+
+.containerMe button{
+    font-size: 20px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* The Modal (background) */
+.modalLR {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    border-radius: 8px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 600px; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+    margin-top: 200px;
+}
+
+.reg {
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+
+#id02 label {
+    font-size: 20px;
+}
+#id02 input {
+    font-size: 20px;
+}
+/* The Close Button (x) */
+.close {
+    float: right;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+model-content {
+    margin-top: 200px;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#id03 input[type=text],#id03 select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+#id03 input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#id03 input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.containerContact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menus {
+    width: 55%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+    float: left;
+}
+.menus0 {
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+    float: left;
+}
+.summary{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 3%;
+    float: left;
+}
+
+.quantity {
+    float: right;
+}
+
+
+fieldset, label { margin: 0; padding: 0;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+/*
+.slider {
+    width: 100%;
+    height: 100px;
+   
+}
+.insideSlide{
+    position: relative;
+    top:0;
+    right:0;
+    width: 87%;
+    height: 100px;
+    overflow: hidden;
+}
+.slider div, .insideSlide{
+     display: inline-block;
+} 
+.leftSlide {
+     float: left;
+}
+.rightSlide{
+    float: right;
+}
+.slider button {
+    height: 100px;
+    width: 20px;
+    padding: 0;
+}
+.slider img {
+    margin: 0;
+}
+*/
+.btn .btn-primary .btn-lg button{
+    width: 30px;
+}
+
+.sliderr {
+    width: 100%;
+    height: 13%;
+    margin: auto;
+    background-color: #bbb;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+* {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 100px auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: auto;
+      margin: 0, 20px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: brown;
+    }
+
+
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .2;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+.panel-title {
+    width:50%;
+    display: inline-block;
+}
+.rightF ,.price{
+    float: right;
+    position: relative;
+    top:-7px;
+    left: 13px;
+}
+.price {
+    margin-right: 10px;
+}
+
+.footer-distributed {
+    display: block;
+    color: aliceblue;
+    background-color: #333;
+    padding-top: 10px;
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.digit1 {
+    font-size: 15px;
+}
+
+.add-minus-button{
+    width: 92px;
+    height: 34px;
+    float: left;
+}
+.digit1{
+    width: 24px;
+    height: 34px;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+}
+.info {
+    height: 34px;
+    font-size: 15px;
+}
+.price div {
+    padding-top: 10px;
+}
+#cheesestick {
+    float: left;
+    margin: 5px;
+}
+
+body > footer {
+    width: 100%;
+
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+}
+#id01 > form > div > span.psw {
+    position: relative;
+    bottom: 10px;
+}
+
+#myTopnav > ul > li:nth-child(2) > a, #myTopnav > ul > li:nth-child(1) > a {
+    position: relative;
+    right: 5px;
+    height: 52px;
+}
+
+
+.search input {
+  width: 90%;
+  height: 32px;
+
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 10px;}
+.search .fa-search { 
+  position: relative;
+  top: 10px;
+  left: 10px;
+    margin: 10px;
+}
+
+.fnamedel, .lnamedel {
+    width: 40%;
+    height: 32px;
+    display: inline-block;
+}
+
+body > div.middlecont > div > div > div > div.panel-body > div > span{
+    margin-right: 10px;
+}
+
+body > div.middlecont > div > div > div > div.panel-body > div.search.fnamedel > span, body > div.middlecont > div > div > div > div.panel-body > div.search.emaildel > span{
+    display: inline-block;
+}
+body > div.middlecont > div > div > div > div.panel-body > div.search.emaildel > input {
+    margin-bottom: 10px;
+    width: 90%;
+    display: inline-block;
+}
+body > div.middlecont > div > div > div > div.panel-body > div.search.fnamedel > span {
+    display: inline-block;
+
+}
+body > div.middlecont > div > div > div > div.panel-body > div:nth-child(1) > input{
+    margin-top: 0px;
+}
+
+.imageAnchoract img{
+    border: 2px solid blue;
+}
+
+.CRN {
+    width: 150px;
+    float: none;
+}
+
+body > div.middlecont > div > div > div:nth-child(2) > div.panel-body > form.exfromyear > select, body > div.middlecont > div > div > div:nth-child(2) > div.panel-body > form:nth-child(15) > select {
+    float: right;
+}
+body > div.middlecont > div > div > div:nth-child(2) > div.panel-body > form:nth-child(15),body > div.middlecont > div > div > div:nth-child(2) > div.panel-body > form.exfromyear{
+    width: 100px;
+}
+body > div.middlecont > div > div > div:nth-child(2) > div.panel-body > form.exfromyear > select{
+    position: relative;
+    left: 10px;
+    bottom: 21px;
+}
+body > div.middlecont > div > div > div:nth-child(2) > div.panel-body > form:nth-child(16){
+    width: 50px;
+}
+
+.hover0{
+    border:1px solid black;
+    border-radius: 10px;
+    text-align:center;
+    width: 20px;
+    height: 20px;
+    position:relative;
+    left: 120px;
+    float: left;
+}
+
+.tooltip0{
+    display:none;
+    position:absolute;
+    border:1px solid red;
+    border-radius: 5px;
+    padding:5px;
+    top:-5px;
+    left:30px;
+    width: 300px;
+}
+
+.hover0:hover .tooltip0{
+    display:block;
+}
+.goleft {
+    position: relative;
+    right: 20px;
+}
+.paymen {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+
+/*Form Wizard*/
+.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #fbe8aa; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #fbbd19; border-radius: 50px; position: absolute; top: 8px; left: 8px; } 
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #fbe8aa;}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #f5f5f5;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+/*END Form Wizard*/
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+@media screen and (max-width: 1330px) {
+    #orderButtons {
+        
+        margin: 0;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    .topnav a{
+        padding: 14px 16px;
+    }
+    #orderButtons {
+        width: 210px;
+    }
+    #orderButtons h2 {
+        font-size: 25px;
+    }
+    .button {
+        width: 200px;
+        padding: 5px;
+        margin: 5px;
+    }
+    #welcome {
+     top: 0;
+     right: -10px;
+    }
+    #welcome img {
+        width: 90%;
+        height: 32%
+    }
+    .modal-content {
+        width: 90%; /* Could be more or less, depending on screen size */
+        margin-top: 10%;
+    }
+    .botLogo {
+        position: relative;
+        bottom: -100px;
+    }
+    .containerMe input{
+        font-size: 13px;
+    }
+
+    .containerMe button{
+        font-size: 13px;
+    }
+    #id02 label {
+        font-size: 13px;
+    }
+    #id02 input {
+        font-size: 13px;
+    }
+    .menus, .summary{
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 830px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
